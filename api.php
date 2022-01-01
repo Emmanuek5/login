@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 	if (!empty($app_name) && !empty($url) && !is_numeric($re_name)) {
 
 		$str = rand();
-		$str1 = rand(1,9999999);
+		$str1 = rand(1,999);
 		$app_id = $result = md5($str);
          
 		$app_secret = $result = md5($str1);
